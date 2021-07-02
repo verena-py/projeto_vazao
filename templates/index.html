@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'parciais/bootstrap.html'%}
+<body>
+     <div class="container" align="center">
+        <div class="jumbotron" align="center">
+            <h1 class="display-4"><p class="text-center">Projeto Vazão <i class="fas fa-cloud-rain"></i></p></h1>
+            <p class="lead"><p class="text-center"> Esse ferramenta web tem como objetivo análisar os dados de vazão da bacia hidrográfica do Rio Coruripe,AL.</p></p>
+            <hr class="my-4">
+
+
+<div class="card-group"">
+  <div class="card">
+      <div class="card" style="width: 18rem;" >
+        <img src="{% static 'img/rio.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Bacia do Rio Coruripe - AL</h5>
+            <p class="card-text">Informações sobre a bacia, e relações com o clima, topografia e qualidade de água da região.</p>
+            <a href="#" class="btn btn-primary">Informações</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'img/mapainterativo.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Mapa interativo</h5>
+            <p class="card-text">Confira os pontos de medição e a região hidrográfica</p>
+            <a href="#" class="btn btn-primary">Mapa</a>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card" style="width: 18rem;">
+        <img src="{% static 'img/grafico.png' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Análise de dados</h5>
+            <p class="card-text">Visualize, filtre e consulte os dados tratados da bacia do Rio Coruripe.</p>
+            <a href='{% url 'dados' %}' class="btn btn-primary">Dados</a>
+        </div>
+    </div>
+  </div>
+
+</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
